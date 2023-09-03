@@ -245,7 +245,8 @@ body{
     display: none;
     position: absolute;
     width: 100%;
-    
+    background-color: rgb(59, 59, 61);
+    opacity: 94%;
     top: 10%;
   }
 
