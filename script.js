@@ -4,9 +4,11 @@ $(document).ready(function(){
 });
 
 $(window).resize(function(){
-  if($(window).width() > 1200){
+  if($(window).width() >= 1200){
     $('#lists').show()
-}
+  }else if($(window).width() < 1200){
+    $('#lists').hide()
+  }
 }
   
 )
