@@ -41,6 +41,11 @@ body{
 #nav #bars{
   display: none;
 }
+
+#nav #lists{
+  display: block;
+}
+
 #nav #lists ul{
   display: flex;
   width: 100%;
@@ -72,7 +77,6 @@ body{
 
 /* Front Page  */
 #front-page{
-
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -240,11 +244,9 @@ body{
   #nav{
     gap: 70%;
   }
-  #nav #lists{
-    display: none;
-  }
+
   #nav #bars{
-    display: inline;
+    display: block;
   }
   #nav #bars button{
     color: var(--light-color-primary);
@@ -252,7 +254,20 @@ body{
     background: none;
     border: none;
   }
+  #nav #lists{
+    display: none;
+    position: absolute;
+    width: 100%;
+    
+    top: 10%;
+  }
 
+  #nav #lists ul{
+    flex-direction: column;
+    height: 40dvh;
+    gap: 5%;
+  }
+ 
   #front-page{
     flex-direction: column;
     align-items: center;
