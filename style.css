@@ -185,7 +185,7 @@ body{
   padding: 1%;
   background: transparent;
   border: 1px solid var(--borders);
-  margin: 1%;
+  margin: 2.5%;
   margin-left: 25%;
   outline: none;
   color: rgba(255, 255, 255, 0.459);
@@ -276,12 +276,18 @@ body{
     width: 100%;
   }
 
+  #recent-works{
+    padding: 5%;
+  }
   #recent-works #recent-gallery{
     width: 90%;
   }
 
   #contact-us #right{
     width: 100%;
+  }
+  #contact-us{
+    padding: 5%;
   }
   
 }
