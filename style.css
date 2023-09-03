@@ -198,9 +198,13 @@ body{
 #footer{
   width: 100%;
   background-color: var(--dark-color-primary);
-  color: rgba(255, 255, 255, 0.925);
+  color: rgba(255, 255, 255, 0.925) ;
   font-size: 22px;
   padding: 1%;
+}
+
+#footer ul li a{
+  color: rgba(255, 255, 255, 0.925);
 }
 
 #footer ul{
@@ -211,10 +215,11 @@ body{
   justify-content: center;
 }
 
-#footer ul li:hover{
+
+#footer ul li a:hover{
   color: var(--light-color-primary);
-  transition: all 0.2s ease-in-out;
 }
+
 
 
 
