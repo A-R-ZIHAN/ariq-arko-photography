@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --transition: all 300ms ease-in-out;
+    --dark-color-primary: #101113;
+    --light-color-primary: #eaec5c;
+    --borders: #e9ec5c4b;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+   
+}
+
+/* Navbar  */
+#nav{
+  width: 100%;
+  display: flex;
+  margin-inline: auto;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30%;
+  background-color: var(--dark-color-primary);
+  color: var(--light-color-primary);
+  border-bottom: solid 2px var(--borders);
+  
+}
+
+#nav #bars{
+  display: none;
+}
+#nav #lists ul{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 40%;
+  list-style: none;
+  font-size: 20px;
+  background-color: #101113;
+}
+#nav #lists ul li a{
+  color: var(--light-color-primary);
+  text-decoration: none;
+}
+
+#nav #lists ul li a:hover, #nav #lists ul li a:active{
+  color: var(--light-color-primary);
+  border-bottom: 1px solid var(--light-color-primary);
+}
+
+#nav #logo{
+  font-size: 25px;
+
+}
+
+
+
+
+
+/* Front Page  */
+#front-page{
+
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 15%;
+  padding: 10%;
+  background-color: var(--dark-color-primary);
+  color: var(--light-color-primary);
+  border-bottom: solid 2px var(--borders);
+}
+
+#front-page h1{
+  font-size: 50px;
+}
+
+#front-page #left{
+  text-align: center;
+}
+#front-page #right{
+  width: 50%;
+}
+
+#profile-img{
+  width: 200px;
+  border-radius: 5px;
+  /* filter: brightness(80%); */
+}
+
+
+
+/* Recent Works  */
+#recent-works{
+  background-color: var(--dark-color-primary);
+  color: var(--light-color-primary);
+  border-bottom: solid 2px var(--borders);
+}
+
+#recent-works #left h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+#recent-works #recent-gallery{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2%;
+  gap: 1%;
+  width: 60%;
+  margin-inline: auto;
+  text-align: center;
+
+}
+#recent-works a{
+  color: var(--light-color-primary);
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.photo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(95%);
+}
+
+
+
+/* Contact Us  */
+
+
+#contact-us{
+  width: 100%;
+  background-color: var(--dark-color-primary);
+  color: var(--light-color-primary);
+  border-bottom: solid 2px var(--borders);
+}
+#contact-us #left h1{
+  font-size: 50px;
+  text-align: center;
+}
+#contact-us #right {
+  margin-inline: auto;
+  width: 80%;
+  padding: 2%;
+}
+#contact-us #right input{
+  width: 100%;
+  font-size: 24px;
+  padding: 1%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--light-color-primary);
+  outline: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+#contact-us #right button{
+  width: 50%;
+  font-size: 24px;
+  padding: 1%;
+  background: transparent;
+  border: 1px solid var(--borders);
+  margin: 1%;
+  margin-left: 25%;
+  outline: none;
+  color: rgba(255, 255, 255, 0.459);
+  font-family: 'Poppins', sans-serif;
+}
+
+#contact-us #right button:hover{
+  background: var(--light-color-primary);
+  color: var(--dark-color-primary);
+}
+
+/* Footer  */
+
+#footer{
+  width: 100%;
+  background-color: var(--dark-color-primary);
+  color: rgba(255, 255, 255, 0.925);
+  font-size: 22px;
+  padding: 1%;
+}
+
+#footer ul{
+  display: flex;
+  list-style: none;
+  gap: 5%;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer ul li:hover{
+  color: var(--light-color-primary);
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+@media (width < 1200px) {
+  body h1{
+    font-size: 25px !important;
+  }
+  body p{
+    font-size: 15px !important;
+  }
+  body input{
+    font-size: 17px !important;
+  }
+  body h4{
+    font-size: 10px !important;
+  }
+
+  #nav{
+    gap: 70%;
+  }
+  #nav #lists{
+    display: none;
+  }
+  #nav #bars{
+    display: inline;
+  }
+  #nav #bars button{
+    color: var(--light-color-primary);
+    font-size: 25px;
+    background: none;
+    border: none;
+  }
+
+  #front-page{
+    flex-direction: column;
+    align-items: center;
+  }
+  #front-page #right{
+    width: 100%;
+  }
+
+  #recent-works #recent-gallery{
+    width: 90%;
+  }
+
+  #contact-us #right{
+    width: 100%;
+  }
+  
+}
