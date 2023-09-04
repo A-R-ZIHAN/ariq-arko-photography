@@ -223,9 +223,6 @@ body{
   color: var(--light-color-primary);
 }
 
-
-
-
 @media (width < 1200px) {
   .column{
     columns: 3;
