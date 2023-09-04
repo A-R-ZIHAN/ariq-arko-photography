@@ -22,7 +22,7 @@ $('#lists ul li a').click(function(){
 });
 
 $('.photo img').click(function(){
-  $('.popup-image').show()
+  $('.popup-image').fadeIn(200)
   $('.popup-image img').attr('src',$(this).attr('src'))
 })
 
@@ -30,6 +30,12 @@ $('.popup-image span').click(function(){
   $('.popup-image').hide()
 })
 
+$('.popup-image').click(function(evt){    
+    if(evt.target.id == "popId")
+      return;
+    $('.popup-image').hide()
+  
+});
 
 
 
