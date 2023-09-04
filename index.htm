@@ -87,8 +87,11 @@
     </div>
     <div id="right">
       <form 
-        action="mailto:zihanforall@gmail.com"
-        enctype="text/plain"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onsubmit="submit()"
       >
 
         <input placeholder="Your Name" type="text" name="name" id="" required><br>
